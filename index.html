@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>survey-form</title>
+</head>
+<body>
+    <h1 id="title">Do yo want to be a brilliant programmer?</h1>
+    <p id="description">fill this form so we can be of your help</p>
+  <form id="survey-form">
+   <div class="input-element"> 
+    <label id="name-label" for="name">name</label>
+    <input type="text" id="name" name="name" placeholder="enter your name" class="form-control" required>
+   </div>
+   <div class="input-element">
+    <label id="email-label" for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="enter your email" class="form-control" required>
+   </div>
+   <div class="input-element">
+    <label for="number" id="number-label">Age(optional):</label>
+    <input type="number" id="number" name="Age" min="18" max="60"  class="form-control" placeholder="your age" required>
+    </div>
+     <div class="input-element">
+      <p>Which option describes yourself?</p>
+       <select id="=dropdown" name="describe" required>
+         <option disabled selected value>select current role</option>
+         <option value="student">student</option>
+         <option value="full time job">full time job</option>
+         <option value="full time learner">full time learner</option>
+         <option value="preferNo">prefer not to say</option>
+         <option value="other">other</option>
+       </select>
+     </div> 
+   <div class="input-element">
+    <div class="input-element">
+    <label id="label-radio">would you give all your time for programming?</label>
+   </div>
+   <div>
+    <label><input type="radio" class="input-radio" value="definitly" name="time">definitly</label>
+   </div>
+   <div>
+    <label>
+      <input type="radio" class="input-radio" value="maybe" name="time">maybe</label>
+   </div>
+   <div>
+    <label>
+      <input type="radio" class="input-radio" value="not sure" name="time">not sure</label>  
+   </div>
+   </div>
+   <div class="input-element">
+    <label id="label-checkbox"> what would you prefer to be</label>
+    <div>
+      <label><input type="checkbox" class="input-ckeckbox" value="Front-end Projects" name="prefer">Front-end Projects</label>
+    </div>
+    <div>
+      <label><input type="checkbox" class="input-ckeckbox" value="Back-end Projects" name="prefer">Back-end Projects</label>
+    </div>
+    <div>
+      <label><input type="checkbox" class="input-ckeckbox" value="Data Visualization" name="prefer">Data Visualization</label>
+    </div>
+    <div class="input-element">
+      <p>Any other comments?</p>
+        <textarea id="comments" placeholder="Enter your comment here" name="comment" class="input-textarea">
+        </textarea>
+    </div>
+   </div>
+        <button id="submit" type="submit">
+          submit
+        </button>
+  </form>
+    
+</body>
+</html>
+<img>
